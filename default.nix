@@ -10,12 +10,12 @@ let
   stage {
     name = "fastq-reformat";
 
-    input1 = fetchFastQ {
+    input1 = fetchFastQGZ {
         url = "https://github.com/JYL31/BioNix-scPipe/blob/main/Sample_Data/simu_R1.fastq.gz";
         sha256 = "1943w8lb6n0fhkbxzqnpgaa4f12diskvw251567c0y3n5xrw5wd3";
     };
 
-    input2 = fetchFastQ {
+    input2 = fetchFastQGZ {
         url = "https://github.com/JYL31/BioNix-scPipe/blob/main/Sample_Data/simu_R2.fastq.gz";
         sha256 = "159j2da6f6g2kw93rydnd9l1k2zfgmp5sfghix7x3464dx5fwql3";
     };
