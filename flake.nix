@@ -16,7 +16,7 @@
         inherit system;
         config.rPackageOverrides = self:
           with self; {
-            edgeR = (import nixpkgs {inherit system;}).rPackages.edgeR.overrideAttrs (attrs: {
+            scPipe = (import nixpkgs {inherit system;}).rPackages.scPipe.overrideAttrs (attrs: {
               buildInputs = attrs.buildInputs ++ lib.optional stdenv.isDarwin libiconv;
             });
           };
