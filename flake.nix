@@ -24,6 +24,5 @@
       bionix' = import bionix {nixpkgs = pkgs;};
     in {
       defaultPackage = bionix'.callBionix ./. {};
-      #packages.solution = bionix'.callBionix ./solution.nix {};
     });
 }
