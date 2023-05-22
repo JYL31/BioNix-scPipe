@@ -9,19 +9,18 @@ in
     name = "fastq-reformat";
 
     input1 = fetchFastQGZ {
-        url = "https://github.com/JYL31/BioNix-scPipe/blob/901477e71031add2e4339f443f2ec30246acfceb/Sample_Data/simu_R1.fastq.gz";
-        sha256 = "15q1pkwhq2yydl7dmh96jifmwd67bvmdk75xfkjyly1xkibiijwd";
+        url = "https://github.com/JYL31/BioNix-scPipe/blob/41861043ed4646b94d17dce5416c8da971a2077b/Sample_Data/simu_R1.fastq.gz";
+        sha256 = "1cspy2f52nbhn1xlkfnrklsv9gw10b0jkzd9r6appl9368j4p6bf";
     };
 
     input2 = fetchFastQGZ {
-        url = "https://github.com/JYL31/BioNix-scPipe/blob/901477e71031add2e4339f443f2ec30246acfceb/Sample_Data/simu_R2.fastq.gz";
-        sha256 = "0d6656931q8n9ml8vw980x3yh20dkzrih5fm8nvhlzkv276vm2gh";
+        url = "https://github.com/JYL31/BioNix-scPipe/blob/41861043ed4646b94d17dce5416c8da971a2077b/Sample_Data/simu_R2.fastq.gz";
+        sha256 = "176d7jfxa1p0h0l9g0mmk7r01j9gip903ibwcxlyi2x0ipmhhic9";
     };
 
     buildInputs = [R];
 
     buildCommand = ''
-      mkdir result
       Rscript ${./script.r}
     '';
   }
