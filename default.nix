@@ -9,13 +9,13 @@ in
     name = "fastq-reformat";
 
     input1 = fetchFastQGZ {
-        url = "https://github.com/JYL31/BioNix-scPipe/blob/41861043ed4646b94d17dce5416c8da971a2077b/Sample_Data/simu_R1.fastq.gz";
-        sha256 = "1cspy2f52nbhn1xlkfnrklsv9gw10b0jkzd9r6appl9368j4p6bf";
+        url = "https://raw.githubusercontent.com/JYL31/BioNix-scPipe/main/Sample_Data/simu_R1.fastq.gz";
+        sha256 = "1zc5hqjf0ydh5vv2mc34la3rz5ym77zniriy4dfrkfw8w370wn4g";
     };
 
     input2 = fetchFastQGZ {
-        url = "https://github.com/JYL31/BioNix-scPipe/blob/41861043ed4646b94d17dce5416c8da971a2077b/Sample_Data/simu_R2.fastq.gz";
-        sha256 = "176d7jfxa1p0h0l9g0mmk7r01j9gip903ibwcxlyi2x0ipmhhic9";
+        url = "https://raw.githubusercontent.com/JYL31/BioNix-scPipe/main/Sample_Data/simu_R2.fastq.gz";
+        sha256 = "035ch20l0vd3f5637yi0s3hvb0zacdhvcrks9abwmqqzvbbb46xm";
     };
 
     buildInputs = [R];
